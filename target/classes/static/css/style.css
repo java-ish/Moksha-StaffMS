@@ -1,0 +1,181 @@
+@charset "ISO-8859-1";
+
+@import
+	url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300&display=swap")
+	;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+nav {
+	background: #6441a5; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2a0845, #6441a5);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2a0845, #6441a5);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.brand-logo {
+	font-family: "Lato", sans-serif;
+	font-size: 3em;
+	font-weight: bolder;
+	letter-spacing: 0.1em;
+}
+
+.nav-wrapper li a {
+	font-family: "Ubuntu", sans-serif;
+	font-size: 18px;
+}
+
+nav ul a:hover {
+	background-color: rgb(255, 255, 255, 0.1) !important;
+}
+
+ul li a {
+	font-size: 18px;
+	position: relative;
+}
+
+ul li a:hover:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	width: 100%;
+	padding: 2px;
+	height: 5px;
+}
+
+/* title */
+.title {
+	text-align: center;
+	font-family: "Lato", sans-serif;
+	font-weight: bolder;
+	color: #e0e0e0;
+}
+
+.sub-title {
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	color: #eeeeee;
+}
+
+.card {
+	padding: 10px;
+}
+
+/* container-holder */
+.card-title h3 {
+	font-weight: bolder;
+	font-family: "Lato", sans-serif;
+	text-align: center;
+}
+
+.content-holder {
+	background: #e8eaf6;
+	border-radius: 5px;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.logo {
+	height: 200px;
+	width: 200px;
+	background: #5e35b1;
+	padding: 10px;
+	border-radius: 100%;
+}
+
+.logo img {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+}
+
+.form-title {
+	color: #7986cb;
+	font-weight: bolder;
+	font-family: "Lato", sans-serif;
+	font-size: 3em;
+}
+
+.form-content p{
+	font-weight: bolder;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	margin-top: 1.3em;
+	font-size: 3em;
+	
+}
+
+i {
+	color: #5e35b1;
+}
+
+.message-card{
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+}
+
+.submit {
+	color: #ffffff;
+	margin-bottom: 2em;
+}
+
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+/*footer*/
+footer {
+  flex: 1 0 auto;
+}
+
+.page-footer,
+.footer-copyright {
+  background: #6441a5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2a0845,
+    #6441a5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2a0845,
+    #6441a5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: ubuntu;
+  font-weight: bold;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ce93d8;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4a148c;
+  border-radius: 3px;
+}
+
+.closure {
+  transform: translateY(-100vh);
+  transition:0.5s ease;
+}
